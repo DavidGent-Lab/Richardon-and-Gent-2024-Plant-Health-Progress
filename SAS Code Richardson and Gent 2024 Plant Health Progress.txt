@@ -304,7 +304,7 @@ proc glimmix plots=(residualpanel) data=dm2;
 where Year ne 2019;
 class Year Treatment Block Timing;
 model tAUDPC=Treatment|Timing/ddfm=kr dist=normal;
-random Year block(Year) Timing*Treatment*Year; *Year*timing Treatment*Year these random effects are ; 
+random Year block(Year) Timing*Treatment*Year; *Year*timing Treatment*Year random effects were removed due to 0 covariance parameter estimates; 
 lsmeans Timing|Treatment/lines cl;
 lsmeans Timing*Treatment/lines slicediff=treatment plot=meanplot (sliceby=Treatment join) cl; 
 output out=out1 pred=mean ucl=upper lcl=lower;
