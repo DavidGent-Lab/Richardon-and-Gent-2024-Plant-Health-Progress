@@ -36,4 +36,4 @@ Treatment: Product trade names are listed for ease of interpretation.
 tAUDPC: squareroot transformation of AUDPC
 
 # Other Notes
-Some additional code is provided for data visualizatiosn which were not published in the paper. 
+Some additional code is provided for data visualizations which were not published in the paper. 
